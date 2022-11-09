@@ -10,7 +10,7 @@ transition-timing-function: ease-in;
 transition: all 0.5s;
 }
 .nav_black{
-    background-color: black;
+    background-color: #111;
 }
 
 .nav_contents {

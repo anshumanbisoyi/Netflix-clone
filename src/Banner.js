@@ -35,18 +35,13 @@ function Banner() {
     >
       <div className="banner_contents">
         <h1 className="banner_title">
-            {movie?.title || movie?.original_name || movie?.name }
+          {movie?.title || movie?.original_name || movie?.name}
         </h1>
         <div className="banner_buttons">
           <button className="banner_button">Play</button>
           <button className="banner_button">My List</button>
         </div>
-        <h1 className="banner_description">
-          {truncate(
-            movie?.overview
-            ,150
-          )}
-        </h1>
+        <h1 className="banner_description">{truncate(movie?.overview, 150)}</h1>
       </div>
       <div className="banner--fadeBottom" />
     </header>

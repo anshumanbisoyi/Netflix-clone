@@ -18,7 +18,7 @@ function Banner() {
     fetchData();
   }, []);
 
-//   console.log(movie); //to get a random movie
+  // console.log(movie?.id); //to get a random movie
 // console.log(movie?.backdrop_path); //to get banner backdrop
   function truncate(string, n) {
     return string?.length > n ? string.substr(0, n - 1) + "..." : string;
@@ -38,7 +38,7 @@ function Banner() {
           {movie?.title || movie?.original_name || movie?.name}
         </h1>
         <div className="banner_buttons">
-          <button className="banner_button">Play</button>
+          <button onClick={()=>{}} className="banner_button">Play</button>
           <button className="banner_button">My List</button>
         </div>
         <h1 className="banner_description">{truncate(movie?.overview, 150)}</h1>

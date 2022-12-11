@@ -16,3 +16,6 @@ opacity:1;
     border:none;
     cursor:pointer;
 }
+.plansScreen__plan--disabled > button{
+    background-color: grey !important;
+}
